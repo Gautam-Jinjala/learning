@@ -159,13 +159,6 @@ svg {
     }
 }
 
-@media (max-width: 991px) {
-    .learners-background:before {
-        content: '';
-    }
-
-}
-
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
     .waves {
@@ -179,5 +172,9 @@ svg {
 
     h1 {
         font-size: 24px;
+    }
+
+    .learners-background:before {
+        content: '';
     }
 }
