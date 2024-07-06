@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Animation
 $("#menu-toggle").click(function(){
-	$("#navbar").slideDown()();
-	$("#navbar").slideDown()("slow");
-	$("#navbar").slideDown()(3000);
+	$("#navbar").slideToggle()();
+	$("#navbar").slideToggle()("slow");
+	$("#navbar").slideToggle()(3000);
   });
