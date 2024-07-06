@@ -1,12 +1,16 @@
 // Navbar
 $(document).ready(function () {
+	if (window.innerWidth < 769) {
+		$("#navbar").hide();
+	}
+
 	$("#menu-toggle").click(function () {
-		$("#navbar").toggle();
+		$("#navbar").toggle("hidden");
 		console.log("navbar is show");
 	});
 
 	// auto hide
-	$("a").click(function () {
+	$(".nav-item").click(function () {
 		console.log("nabar is hidden");
 		$("#navbar").hide();
 	});
@@ -61,3 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 });
+
+// Animation
+$("#menu-toggle").click(function(){
+	$("#navbar").slideDown()();
+	$("#navbar").slideDown()("slow");
+	$("#navbar").slideDown()(3000);
+  });
